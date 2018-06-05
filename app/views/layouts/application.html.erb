@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookshelf</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body
+  <%= link_to "Home", root_path %>
+  <br>
+  <%= link_to "Authors", authors_path %>
+  <br>
+  <%= link_to "Books", books_path %>
+  <br>
+  <div class="right-side">
+    <%= yield %>
+  </div>
+
+    <%= yield %>
+  </body>
+
+</html>
